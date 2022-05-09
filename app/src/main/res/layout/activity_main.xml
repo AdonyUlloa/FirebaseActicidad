@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    //Xml donde esta el diseño principal de registro de datos
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="259dp"
+        app:srcCompat="@drawable/logo_vertical_4" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <EditText
+        android:id="@+id/edTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <EditText
+        android:id="@+id/edTextLabo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Laboratorio 1 20%"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:autofillHints=""
+        android:inputType="numberDecimal"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <EditText
+        android:id="@+id/edTextLabo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Laboratorio 2 20%"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <EditText
+        android:id="@+id/edTextParcial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parcial 40%"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/yellow"
+        android:backgroundTintMode="add"
+        android:text="Registrar"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/btViewRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFC107"
+        android:text="Ver registros"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>

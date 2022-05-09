@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_ver_registros_scene"
+    tools:context=".VerRegistros">
+
+
+    //Xml donde veremos los datos solicitados
+    <TextView
+        android:id="@+id/dato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="Nombre"
+        android:minHeight="48dp"
+        android:text="Introduce nombre del estudiante a buscar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold|italic" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <EditText
+        android:id="@+id/registroABuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digitar dato a buscar"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btVerRegistro"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/yellow"
+        android:backgroundTintMode="add"
+        android:text="Ver Registro"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/dato1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="No hay petición aun"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold|italic" />
+
+
+</LinearLayout>
